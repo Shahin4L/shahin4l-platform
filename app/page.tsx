@@ -158,7 +158,7 @@ export default function Home() {
           </a>
           <nav className={menuOpen ? "nav-links open" : "nav-links"} aria-label="Main navigation">
             {t.nav.map((item, i) => (
-              <a key={item} href={["#about", "#experience", "#projects", "#operations", "#insights"][i]} onClick={() => setMenuOpen(false)}>{item}</a>
+              <a key={item} href={["#about", "#experience", "#projects", "/operations", "/blog"][i]} onClick={() => setMenuOpen(false)}>{item}</a>
             ))}
           </nav>
           <div className="nav-actions">
@@ -183,12 +183,14 @@ export default function Home() {
             <div className="hero-actions">
               <a className="button" href="#projects">{t.primary}<ArrowUpRight size={17} /></a>
               <a className="button button-ghost" href="#contact">{t.secondary}<ArrowDownRight size={17} /></a>
+              <a className="button button-ghost" href="https://raw.githubusercontent.com/Shahin4L/shahin4l.github.io/main/Shahin_Alam_CV_Bangladesh.pdf" target="_blank" rel="noreferrer">View Resume <ArrowUpRight size={17} /></a>
             </div>
             <p className="proof"><Check size={16} />{t.proof}</p>
           </div>
-          <div className="hero-art" aria-label="SHAHIN4L brand graphic">
-            <div className="orbit orbit-one" /><div className="orbit orbit-two" />
-            <div className="monogram"><span>SHAHIN</span><strong>4L</strong><small>OPERATIONS THINKING</small></div>
+          <div className="hero-art profile-art" aria-label="Portrait of Md Shahin Alam">
+            <div className="profile-frame">
+              <img src="https://raw.githubusercontent.com/Shahin4L/shahin4l.github.io/main/profile.jpg" alt="Md Shahin Alam" />
+            </div>
             <div className="floating-card card-top"><ChartNoAxesCombined size={18} /><span>MEASURABLE<br />IMPROVEMENT</span></div>
             <div className="floating-card card-bottom"><Boxes size={18} /><span>PEOPLE · PROCESS<br />TECHNOLOGY</span></div>
           </div>
