@@ -158,7 +158,7 @@ export default function Home() {
           </a>
           <nav className={menuOpen ? "nav-links open" : "nav-links"} aria-label="Main navigation">
             {t.nav.map((item, i) => (
-              <a key={item} href={["#about", "#experience", "#projects", "#operations", "#insights"][i]} onClick={() => setMenuOpen(false)}>{item}</a>
+              <a key={item} href={["#about", "#experience", "#projects", "/operations", "/blog"][i]} onClick={() => setMenuOpen(false)}>{item}</a>
             ))}
           </nav>
           <div className="nav-actions">
